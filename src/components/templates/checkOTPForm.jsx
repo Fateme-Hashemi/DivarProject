@@ -1,7 +1,9 @@
 import PropTypes from 'prop-types';
 import { CheckOtp } from '../../services/auth';
+import { SetCookie } from '../../utils/cookie';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+
 
 function CheckOTPForm ({code, mobile, setCode, setStep}) {
 
@@ -10,7 +12,7 @@ function CheckOTPForm ({code, mobile, setCode, setStep}) {
         if(code.length !== 5) return;
         const {response, error} = await CheckOtp(mobile, code);
         if(response) {
-            console.log(response)
+            SetCookie(response.data);
         }
         if(error) {
             toast.error('کد وارد شده صحیح نمی باشد. لطفا دوباره امتحان کنید.');
