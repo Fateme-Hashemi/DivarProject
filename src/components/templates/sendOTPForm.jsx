@@ -16,7 +16,7 @@ function SendOPTForm ({setStep, mobile, setMobile}){
                 toast.success("کد تایید با موفقیت ارسال شد.");
             }
         if(error) {
-                toast.error(error.response.data.message);
+                toast.error('خطا در شبکه یا شماره موبایل');
         }
     }
     return ( 
