@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
-import { CheckOtp } from '../../services/auth';
-import { SetCookie } from '../../utils/cookie';
+import { CheckOtp } from 'services/auth';
+import { SetCookie } from 'utils/cookie';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 

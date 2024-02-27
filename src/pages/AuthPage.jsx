@@ -1,6 +1,6 @@
 import { useState } from "react";
-import CheckOTPForm from "../components/templates/checkOTPForm";
-import SendOPTForm from "../components/templates/sendOTPForm";
+import CheckOTPForm from "components/templates/checkOTPForm";
+import SendOPTForm from "components/templates/sendOTPForm";
 
 
 

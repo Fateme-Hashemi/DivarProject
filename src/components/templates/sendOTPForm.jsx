@@ -1,6 +1,6 @@
 
 import PropTypes from 'prop-types';
-import { SendOtp } from '../../services/auth';
+import {SendOtp} from 'services/auth';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
