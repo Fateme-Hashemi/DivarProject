@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import {SendOtp} from 'services/auth';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import styles from './SendOTPForm.module.css';
 
 function SendOPTForm ({setStep, mobile, setMobile}){
     const submitHandler = async (e)=> {
@@ -22,7 +23,7 @@ function SendOPTForm ({setStep, mobile, setMobile}){
     return ( 
         <div>
          
-   <form onSubmit={submitHandler}>
+   <form onSubmit={submitHandler} className={styles.form}>
             <p>ورود به حساب کاربری</p>
             <span>
                 برای استفاده از امکانات دیوار، لطفا شماره موبایل خود را وارد کنید. کد تایید به این شماره پیامک  خواهد شد.
