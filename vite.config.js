@@ -1,7 +1,7 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
-const paths = ['src', 'assets', 'components', 'configs', 'pages', 'router', 'services', 'styles', 'utils'];
+const paths = ['src', 'assets', 'components', 'configs', 'pages', 'router', 'services', 'styles', 'utils', 'layouts'];
 
 
 
