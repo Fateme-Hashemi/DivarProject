@@ -8,7 +8,6 @@ import styles from './SendOTPForm.module.css';
 function SendOPTForm ({setStep, mobile, setMobile}){
     const submitHandler = async (e)=> {
         e.preventDefault();
-        console.log(e);
         if(mobile.length !== 11) return;
         const {response, error} =  await SendOtp(mobile);
      
