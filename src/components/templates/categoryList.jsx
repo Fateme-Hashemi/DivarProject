@@ -14,8 +14,6 @@ const {mutate } = useMutation(deleteCategory, {
 const deleteHandler = id => {
     mutate(id);
 }
-
-console.log(data, isLoading)
     return (
         <div className={styles.list}>{isLoading ? <Loader /> : data.data.map((item) => (
             <div key={item._id}>

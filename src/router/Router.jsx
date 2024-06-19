@@ -13,7 +13,6 @@ function Router() {
     if(isLoading) {
         return <Loader />
     }
-    console.log(data)
     return (
         <Routes>
         <Route path="/" element={<HomePage />} />
