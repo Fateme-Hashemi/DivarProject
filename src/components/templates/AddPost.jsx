@@ -36,7 +36,7 @@ function AddPost() {
 console.log(formData)
         const token = getCookie('accessToken');
         console.log(token)
-        axios.post(`${import.meta.env.VITE_BASE_URL}post/create`, formData, {
+        axios.post(`${import.meta.env.VITE_BASE_URL}post/create`, {formData}, {
             headers: {
                 'Content-Type': 'multipart/form-data',
                 Authorization: `bearer ${token}`,
